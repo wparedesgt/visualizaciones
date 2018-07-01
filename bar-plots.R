@@ -29,11 +29,12 @@ bike.sum =bike %>%
   group_by(season, workingday) %>% 
   summarize(rental = sum(cnt))
 
+
 #Creamos el plot
 
 bike.sum %>% ggplot(aes(x= season, y= rental)) + geom_bar(show.legend = TRUE, stat = "identity") + labs(title = "Rentas por temporada y dia")
 
-ggsave("plots/ventas-x-temprada-x-dia.png")
+ggsave("plots/ventas-x-temporada-x-dia.png")
 
 
 #Agregando escalas texto y leyendas
