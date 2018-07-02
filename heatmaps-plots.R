@@ -7,7 +7,7 @@ library(ggthemes)
 
 #cargando la base de datos y cambiandole nombre a las filas
 
-mtcars=read.csv("data/mtcars.csv")
+mtcars <-read.csv("data/mtcars.csv")
 rownames(mtcars) <- mtcars$X
 mtcars$X <- NULL
 
